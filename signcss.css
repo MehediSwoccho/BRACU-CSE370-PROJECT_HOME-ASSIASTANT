@@ -1,0 +1,157 @@
+/* General Styles */
+body, input, select, button {
+    font-family: 'Arial', sans-serif; /* Changed font to Arial for better visibility */
+    font-size: 18px; /* Increased font size for better readability */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff; /* Text color white for better contrast */
+}
+
+.container {
+    padding: 40px; /* Increased padding for better spacing */
+}
+
+/* Form Control */
+.form-control {
+    border-radius: 0.75rem;
+    margin-bottom: 15px;
+    padding: 15px; /* Increased padding for larger input fields */
+    width: 100%;
+    border: 1px solid #ccc;
+    font-size: 18px; /* Larger input text */
+    background-color: #333; /* Darker background for input fields */
+    color: #fff; /* White text in input fields */
+}
+
+input[type="submit"] {
+    background-color: lightcoral;
+    color: white;
+    border: none;
+    padding: 15px; /* Increased padding for larger buttons */
+    cursor: pointer;
+    font-size: 18px; /* Larger button text */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for both background and text color */
+    text-align: center; /* Ensure text is centered */
+    display: inline-block; /* Keep the button inline */
+    width: 100%; /* Ensure the button takes full width */
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+    color: #fff; /* Keep text white on hover */
+}
+
+/* Focus States */
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: #45a049;
+}
+
+/* Wrapper */
+.wrapper.style4 {
+    background-color: rgba(0, 0, 0, 0.7); /* Added semi-transparent overlay to background */
+    background-image: url('https://via.placeholder.com/1600x900'); /* Replaced image with placeholder */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding: 60px 0; /* Increased padding */
+}
+
+/* Tab Navigation Styles */
+.register .nav-tabs {
+    margin-top: 3%;
+    border: none;
+    background-color: black;
+    border-radius: 1.5rem;
+    width: 35%; /* Increased width for better visibility */
+    float: right;
+}
+
+.register .nav-tabs .nav-link.active {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+    width: 150px; /* Increased width of active tab */
+}
+
+.nav-tabs .nav-link {
+    color: white;
+    font-size: 18px; /* Increased font size for tabs */
+}
+
+.tab-content {
+    margin-top: 60px;
+    color: white;
+}
+
+/* Header Styles */
+header {
+    background-color: black;
+    padding: 15px; /* Increased padding */
+    color: white;
+    text-align: center;
+}
+
+header .logo a {
+    color: white;
+    font-size: 26px; /* Increased font size */
+    text-decoration: none;
+}
+
+header .logo span {
+    color: lightcoral;
+}
+
+/* Form Heading */
+h3.register-heading {
+    text-align: center;
+    color: lightcoral; /* Changed heading color for better visibility */
+    margin-bottom: 40px; /* Increased margin */
+    font-size: 26px; /* Increased font size */
+}
+
+/* Register Form */
+.register-form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col-md-6 {
+    width: 48%; /* Increased width for better spacing */
+}
+
+/* Button Styles */
+.btnRegister {
+    padding: 15px; /* Increased padding */
+    border-radius: 0.75rem;
+    background-color: lightcoral;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    text-align: center;
+    width: 100%; /* Ensures the button takes full width */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for both background and text color */
+    display: inline-block; /* Keep button as inline block */
+}
+
+.btnRegister:hover {
+    background-color: #45a049;
+    color: #fff; /* Keep text white on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .register .nav-tabs {
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+    }
+    .col-md-6 {
+        width: 100%;
+    }
+}
